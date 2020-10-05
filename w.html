@@ -15,8 +15,14 @@
     if(userAgent == null || userAgent == ''){
         platform = 'WEB' ;
     }else{
-         if(userAgent.indexOf("android") != -1 )else{
-             platform = 'WEB' ;
+         if(userAgent.indexOf("android") != -1 ){
+             platform = 'ANDROID';
+             location.href = "index.html";
+         }else if(userAgent.indexOf("ios") != -1 || userAgent.indexOf("iphone") != -1 || userAgent.indexOf("ipad") != -1){
+             platform = 'IOS';
+             location.href = "index.html";
+         }else if(userAgent.indexOf("windows phone") != -1 ){
+             platform = 'WP';
              location.href = "index.html";
          }
   }
