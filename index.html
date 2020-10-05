@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>鼎天网络云盘官网</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">鼎天网络云盘</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://yun.dtnetwork.top/#/login">登录 <span class="sr-only">(current)</span></a>
+          </li>
+			 <li class="nav-item">
+            <a class="nav-link" href="https://yun.dtnetwork.top/#/signup">注册</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://docs.dtnetwork.top/zui-xin-huo-dong">最新活动</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://docs.dtnetwork.top/2.1.2">教程</a>
+          </li>
+			<li class="nav-item">
+            <a class="nav-link" href="https://docs.dtnetwork.top/chang-jian-wen-ti">常见问题</a>
+          </li>
+          	<li class="nav-item">
+            <a class="nav-link" href="https://docs.dtnetwork.top/yi-jian-fan-kui">意见反馈</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <div class="jumbotron text-center mt-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1>欢迎使用鼎天网络云盘</h1>
+              <p>鼎天网络工作室成立于2020年4月。于2020年9月起开始云盘试运营，同年10月正式上线。 云盘不包含任何广告，保证用户舒适体验。</p>
+              <p><a class="btn btn-primary btn-lg" href="https://docs.dtnetwork.top/" role="button">探索更多»</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+         <p><strong> <center><span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>
+      <script>
+      var now = new Date(); 
+      function createtime(){ 
+          var grt= new Date("10/01/2020 00:00:00");//此处修改你的建站时间或者网站上线时间 
+          now.setTime(now.getTime()+250);
+          days = (now - grt ) / 1000 / 60 / 60 / 24; 
+          dnum = Math.floor(days); 
+          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); 
+          hnum = Math.floor(hours); 
+          if(String(hnum).length ==1 ){
+              hnum = "0" + hnum;
+          } 
+          minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+          mnum = Math.floor(minutes); 
+          if(String(mnum).length ==1 ){
+                   mnum = "0" + mnum;
+          } 
+          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+          snum = Math.round(seconds); 
+          if(String(snum).length ==1 ){
+                   snum = "0" + snum;
+          } 
+          document.getElementById("timeDate").innerHTML = "鼎天网络云盘已安全运行 "+dnum+" 天"; 
+          document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+      } 
+      setInterval("createtime()",250);
+</script></center></strong></p>
+	  
+  <p>
+	  <center>
+		  <div id="cc-myssl-id">
+      <a href="https://myssl.com/www.yun.dtnetwork.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id3.png" alt="" style="max-height:50px;display:block;margin:0 auto"></a>
+</div>
+		  <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
+    <a href="https://myssl.com/www.yun.dtnetwork.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
+</div>
+		  </center>
+	  
+	  </p>
+    <hr>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © DTNETWORK. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
